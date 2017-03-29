@@ -8,7 +8,30 @@
     	<script src="js/todosController.js"></script>
     <title>Hangook TODO</title>
   </head>
-  <body ng-controller="TodosController">
+
+
+  <body>
+
+    <div  ng-controller="TodosController">
+      <div>
+        You have {{all.length}} tasks TODO
+      </div>
+
+      <ul>
+        <li ng-repeat="todo in all">
+          {{todo.title}}
+          {{todo.time}}
+        </li>
+      </ul>
+
+
+
+
+
+
+
+    </div>
+
 
     <form action=""></form>
 
