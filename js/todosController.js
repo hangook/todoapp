@@ -12,10 +12,10 @@ function TodosController($scope) {
 
   }
   $scope.all = [
-    {title: 'GO to GA', time: '9am to 6pm', busy: true},
-    {title: 'dinner', time: '6pm to 630pm', busy: true},
-    {title: 'homework', time: '7pm to 8pm', busy: true},
-    {title: 'chill', time: '8pm to 6pm', busy: true},
+    {title: 'GO to GA', time: '9am to 6pm', complete: true},
+    {title: 'dinner', time: '6pm to 630pm', complete: true},
+    {title: 'homework', time: '7pm to 8pm', complete: true},
+    {title: 'chill', time: '8pm to 6pm', complete: true},
   ]
   $log.log($scope.all)
 
@@ -25,8 +25,8 @@ function addTodo() {
   $scope.all.push({
     title: $scope.newTodo.title,
     time: $scope.newTodo.time,
-    busy: true,
-  })
+    complete: true,
+  })text
   $scope.newTodo = {
     title: '',
     time: ''
